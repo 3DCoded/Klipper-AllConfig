@@ -60,7 +60,7 @@ HEADER = """
 # step_pin: xxx
 # dir_pin: xxx
 # en_pin: !xxx
-# rotation_distance:
+# rotation_distance: 32
 # pid_kp: 21.432
 # pid_ki: 1.856
 # pid_kd: 61.884
