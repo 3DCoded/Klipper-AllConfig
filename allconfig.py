@@ -137,7 +137,7 @@ class PrinterAllConfig:
                 for f in files
     ]
 
-        allconfig = ''+HEADER+str(section_filenames)
+        allconfig = ''+HEADER
         for section in self.config.fileconfig.sections():
             allconfig += f'[{section}]'
             if section in section_filenames:
