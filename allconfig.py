@@ -94,7 +94,8 @@ class ConfigParser:
             parser.read_file(file, filename)
             for section in parser.sections():
                 if section in section_filenames:
-                    section_filenames[section].append(filename)
+                    if filename not in section_filenames[section]:
+                        section_filenames[section].append(filename)
                 else:
                     section_filenames[section] = [filename]
 
